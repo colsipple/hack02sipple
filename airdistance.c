@@ -12,20 +12,20 @@
 
 
 int main(int argc, char **argv[]) {
-  double lat, lon, lat2, lon2, r, d;
+  double latitude1, longitude1, latitude2, longitude2, r, d;
   r = 6371;
   
-  printf("Enter the lattitude: ");
-  scanf("%lf", &lat1 );
+  printf("Enter the latitude of the first destination [in degrees, anywhere from -90 to 90]: ");
+  scanf("%lf", &latitude1 );
 
-  printf("Enter the longitude: ");
-  scanf("%lf", &lon1 );
+  printf("\nEnter the longitude of the first destination [in degrees, anywhere from -180 to 180]: ");
+  scanf("%lf", &longitude1 );
 
-  printf("Enter the lattitude: ");
-  scanf("%lf", &lat2 );
+  printf("\nEnter the latitude of the second destination [in degrees, anywhere from -90 to 90]: ");
+  scanf("%lf", &latitude2 );
 
-  printf("Enter the longitude: ");
-  scanf("%lf", &lon2 );
+  printf("\nEnter the longitude of the second destination [in degrees, anywhere from -180 to 180]: ");
+  scanf("%lf", &longitude2 );
 
 
   return 0;
