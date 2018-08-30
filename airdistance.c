@@ -15,16 +15,16 @@ int main(int argc, char **argv[]) {
   radius = 6371;
   
   //ask for user input for coordinates of two destinations
-  printf("Enter the latitude of the first location [in degrees, anywhere from -90 to 90]: ");
+  printf("Enter the latitude of the origin [in degrees, anywhere from -90 to 90]: ");
   scanf("%lf", &latitude1 );
 
-  printf("\nEnter the longitude of the first location [in degrees, anywhere from -180 to 180]: ");
+  printf("\nEnter the longitude of the origin [in degrees, anywhere from -180 to 180]: ");
   scanf("%lf", &longitude1 );
 
-  printf("\nEnter the latitude of the second location [in degrees, anywhere from -90 to 90]: ");
+  printf("\nEnter the latitude of the destination [in degrees, anywhere from -90 to 90]: ");
   scanf("%lf", &latitude2 );
 
-  printf("\nEnter the longitude of the second location [in degrees, anywhere from -180 to 180]: ");
+  printf("\nEnter the longitude of the destination [in degrees, anywhere from -180 to 180]: ");
   scanf("%lf", &longitude2 );
   
   //math time! (converts and uses equations)
@@ -44,9 +44,9 @@ int main(int argc, char **argv[]) {
   
   printf("==========================\n");
   
-  printf("First Location: (%f, %f)\n", latitude1, longitude1);
+  printf("Origin: (%f, %f)\n", latitude1, longitude1);
   
-  printf("Second Location: (%f, %f)\n", latitude2, longitude2);
+  printf("Destination: (%f, %f)\n", latitude2, longitude2);
   
   printf("Your air distance is: %f kms!\n", distance);
   
